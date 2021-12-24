@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Employee Payroll Form
+        </title>
+        <link rel="stylesheet" href="EmployeePayroll.css">
+    </head>
+    <body>
+        <header class="headerContent">
+            <dic class="logoContent">
+                <img src="/1113+ Whatsapp DP Images ✅ Whatsapp Profile Pictures.jfif" alt="image" width="50px" height="50px">
+                <div>
+                    <span class="empText">Employee</span><br>
+                    <span class="empText emp-Payroll">Payroll Data</span>
+                </div>
+            </dic>
+        </header>
+        <div class="formContent">
+            <form class="form" action="#" onsubmit="save();return false">
+            <div class="formHead">Employee Payroll Form</div>
+                <div class="RowContent">
+                    <label class="lableText" for="name">Name</label>
+                    <input class="input" type="text" id="name" placeholder="your name...." required>
+                </div>
+                <div class="imageContent">
+                    <label class="lableText" for="profile">Profile Image</label>
+                    <img src="/profilepic.jpg" alt="Image" width="100px" height="100px">
+                    
+                </div>
+                <div class="RowContent">
+                    <label class="lableText" for="profile">Gender</label>
+                    <div>
+                        <label>Male</label>
+                        <input id="Male" name="Gender" type="radio" value="male">
+                        <label>Female</label>
+                        <input id="Female" name="Gender" type="radio" value="female">
+                    </div>                    
+                </div>
+                <div class="RowContent">
+                    <label class="lableText" for="Department">Department</label>
+                    <div>
+                        <input class="checkbox" type="checkbox" id="Hr" name="hr" value="Hr">
+                        <label class="text" for="hr">Hr</label>
+                        <input class="checkbox" type="checkbox" id="Sales" name="Sales" value="Sales">
+                        <label class="text" for="Sales">Sales</label>
+                        <input class="checkbox" type="checkbox" id="Accounts" name="Accounts" value="Accounts">
+                        <label class="text" for="Accounts">Accounts</label>
+                        <input class="checkbox" type="checkbox" id="IT" name="IT" value="IT">
+                        <label class="text" for="IT">IT</label>
+                    </div>
+                </div>
+                <div class="RowContent">
+                   
+                    <label class="lableText" for="Salary">Choose your salary:</label>
+                    <input class="input" type="range" name="Salary" id="Salary" min="300000" max="500000" step="100" value="400000">
+                    <output class="salaryOutput text" for="Salary">450000</output>
+                   
+                </div>
+                <div class="RowContent">
+                    <label class="lableText" for="date">Date</label>
+                    <input class="input" type="date" name="Date" id="Date" >                   
+                </div>
+                <div>
+                    <a href="" class="resetButton button cancleButton">Cancel</a>
+                <div>
+                    <button type="submit" class="button submitButton" id="submitButton">submit</button>
+                    <button type="reset" class="resetButton button">reset</button>
+                </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
